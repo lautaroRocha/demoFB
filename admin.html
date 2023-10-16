@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
     <title>Bookstore</title>
 </head>
 
@@ -14,30 +15,32 @@
         <h1>Bookstore</h1>
 
     </header>
-    <form id="new-book">
-        <label for="title">TITLE
-            <input type="text" name="title" id="title">
-        </label>
-        <label for="price">PRICE
-            <input type="number" name="price" id="price">
-        </label>
-        <label for="release">RELEASE
-            <input type="date" name="release" id="release">
-        </label>
-        <label for="cover"> COVER
-            <input type="file" name="cover" id="cover">
-        </label>
-        <button id="post-btn">POST</button>
-    </form>
-
-    <form id="delete-book">
-        <label for="book-to-delete">Seleccioná un libro para borrar
-            <select name="book-to-delete" id="book-to-delete">
-            </select>
-        </label>
-        <button id="delete-btn">DELETE </button>
-    </form>
-
+    <main class="admin">
+        <form id="new-book">
+            <h2>Añadir libro</h2>
+            <label for="title">TITLE
+                <input type="text" name="title" id="title">
+            </label>
+            <label for="price">PRICE
+                <input type="number" name="price" id="price">
+            </label>
+            <label for="release">RELEASE
+                <input type="date" name="release" id="release">
+            </label>
+            <label for="cover"> COVER
+                <input type="file" name="cover" id="cover">
+            </label>
+            <button id="post-btn">POST</button>
+        </form>
+        <form id="delete-book">
+            <h2>Borrar libro</h2>
+            <label for="book-to-delete">Seleccioná un libro para borrar
+                <select name="book-to-delete" id="book-to-delete">
+                </select>
+            </label>
+            <button id="delete-btn">DELETE </button>
+        </form>
+    </main>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
