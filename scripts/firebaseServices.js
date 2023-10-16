@@ -6,7 +6,7 @@ export const getBooks = () => {
         .get()
         .then((querySnapshot) => {
             querySnapshot.forEach((doc) => {
-                drawCard(doc.data())
+                window.location.pathname.includes('admin') ? null : drawCard(doc.data())
                 BOOKS.push(doc.data())
             });
         })
@@ -39,3 +39,23 @@ export const uploadBook = async (e, form) => {
         .then(() => console.log('book uploaded'))
         .catch((e) => console.error('Something went erong:  ' + e))
 }
+
+
+
+
+export const deleteBook = async (e, bookName) => {
+    e.preventDefault();
+    try {
+        const querySnapshot = await db.collection('books').where('name', '==', bookName).get();
+        if (!querySnapshot.empty) {
+            const doc = querySnapshot.docs[0];
+            await doc.ref.delete();
+            console.log('Document successfully deleted!');
+            getBooks()
+        } else {
+            console.log('No matching documents found.');
+        }
+    } catch (error) {
+        console.error('Error deleting document: ', error);
+    }
+};

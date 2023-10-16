@@ -54,11 +54,12 @@ const updateTotalPrice = () => {
     console.log(CART.total)
 }
 
-CART_COUNT.onclick = () => {
-    aside.classList.toggle('closed')
+if(!window.location.pathname.includes('admin')) {
+    CART_COUNT.onclick = () => {
+        aside.classList.toggle('closed')
+    }
+    closeCartBtn.onclick = () => {
+        aside.classList.toggle('closed')
+    }
+    window.onload = getBooks()
 }
-closeCartBtn.onclick = () => {
-    aside.classList.toggle('closed')
-}
-
-window.onload = getBooks()
