@@ -1,0 +1,29 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+}
+
+
+header svg {
+    height: 2rem;
+    width: auto;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+
+#new-book {
+    display: flex;
+    flex-direction: column;
+}
