@@ -33,3 +33,7 @@ Esta app podría incorporar las siguientes mejoras: <br>
 ### Credenciales 
 
 Esta app fue realizada para ofrecer un ejemplo a lxs miembros de los distintos grupos a los que ofrezco apoyo técnico en sus proyectos grupales de fin de curso. Solicitar las credenciales por mail o whatsapp a Lautaro Rocha.
+
+### Explicaciones
+
+En la rama *expl* hay comentarios en los archivos de Javascript para ayudar a su comprensión.
