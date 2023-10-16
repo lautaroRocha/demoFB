@@ -1,5 +1,7 @@
 # DemoFirebase Bookstore
 
+[ONLINE DEMO](https://lautarorocha.github.io/demoFB/)
+
 Esta es una webapp escrita con HTML, CSS y JS vanilla, que simula un carrito de compras de una librería. Usa Firebase (serviocios Firestore y Storage) para guardar y recuperar la data de los libros.
 <br>
 Se usaron ES6Modules para dividir la lógica en módulos separados
