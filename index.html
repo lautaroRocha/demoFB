@@ -9,7 +9,6 @@
 </head>
 
 <body>
-
     <header>
 
         <h1>Bookstore</h1>
@@ -24,28 +23,38 @@
             </svg>
         </span>
     </header>
-    <form id="new-book" >
+    <form id="new-book">
         <label for="title">TITLE
             <input type="text" name="title" id="title">
         </label>
         <label for="price">PRICE
-            <input type="number" name="price" id="price" >
+            <input type="number" name="price" id="price">
         </label>
         <label for="release">RELEASE
-            <input type="date" name="release" id="release"  >
+            <input type="date" name="release" id="release">
         </label>
         <label for="cover"> COVER
             <input type="file" name="cover" id="cover">
         </label>
         <button id="post-btn">POST</button>
     </form>
-        <main>
-    
-        </main>
+    <main>
+
+    </main>
+    <aside class="closed">
+        <div class="cart-content">
+            <button>cerrar</button>
+            Tu carrito
+            <main class="cart-items">
+
+            </main>
+            <span>VALOR TOTAL DE COMPRA: $0</span>
+            <button>COMPRAR</button>
+        </div>
+    </aside>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
-
     <script type="module" src="script.js"></script>
 </body>
 

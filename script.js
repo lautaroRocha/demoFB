@@ -23,8 +23,8 @@ db.collection("books")
     .get()
     .then((querySnapshot) => {
         querySnapshot.forEach((doc) => {
-            BOOKS.push(doc.data())
             drawCard(doc.data())
+            BOOKS.push(doc.data())
         });
     })
     .catch((error) => {
