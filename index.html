@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>Bookstore</title>
+    </head>
+    <body>
+        <header>
+
+            <h1>Bookstore</h1>
+
+            <span id="cart">
+                <svg width="800px" height="800px" fill="#000000" version="1.1" viewBox="0 0 902.86 902.86"
+                    xml:space="preserve" xmlns="http://www.w3.org/2000/svg" id="cart-btn">
+                    <path
+                        d="m671.5 577.83 110.48-432.61h120.87v-68h-173.69l-26.046 101.98-703.13-0.503 74.753 399.13h596.75v3e-3zm14.262-330.64-67.077 262.64h-487.49l-49.271-263.07 603.84 0.432z" />
+                    <path
+                        d="m578.42 825.64c59.961 0 108.74-48.783 108.74-108.74s-48.782-108.74-108.74-108.74h-409.7c-59.961 0-108.74 48.781-108.74 108.74s48.782 108.74 108.74 108.74 108.74-48.783 108.74-108.74c0-14.4-2.821-28.152-7.927-40.742h208.07c-5.107 12.59-7.928 26.342-7.928 40.742 1e-3 59.961 48.783 108.74 108.74 108.74zm-368.96-108.74c0 22.467-18.277 40.744-40.743 40.744s-40.744-18.277-40.744-40.744c0-22.465 18.277-40.742 40.744-40.742 22.466 0 40.743 18.277 40.743 40.742zm409.7 0c0 22.467-18.277 40.744-40.743 40.744s-40.743-18.277-40.743-40.744c0-22.465 18.277-40.742 40.743-40.742s40.743 18.277 40.743 40.742z" />
+                </svg>
+                <span id="cart-count"></span>
+            </span>
+        </header>
+        <main>
+
+        </main>
+        <aside class="closed">
+            <div class="cart-content">
+                <button id="close-cart" class="close">cerrar</button>
+                Tu carrito
+                <main id="cart-items">
+
+                </main>
+                <span id="cart-value">VALOR TOTAL DE COMPRA: $0</span>
+                <button>COMPRAR</button>
+            </div>
+        </aside>
+        <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-app-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-storage-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore-compat.js"></script>
+        <script type="module" src="scripts/cart.js"></script>
+    </body>
+</html>
