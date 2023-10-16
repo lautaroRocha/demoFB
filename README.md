@@ -18,6 +18,16 @@ Se usaron ES6Modules para dividir la lógica en módulos separados
 | cart.js  |  Importa servicios de firebase para generar toda la lógica relacionada al carrito (mostrar libros, seleccionarlos, calcular precio, etc) |
 | admin.js  | Recupera los valores en los formularios de la pagina de admin para agregar o eliminar libros a la base de datos  |
 
+### Mejoras
+
+Esta app podría incorporar las siguientes mejoras: <br>
+- Implementar autorización en la ruta del admin
+- Juntar información del cliente al momento de realizar la compra
+- Guardar en una colección todos los pedidos
+- Enviar un mail al admin notificando el pedido de compra
+
+
+
 ### Credenciales 
 
 Esta app fue realizada para ofrecer un ejemplo a lxs miembros de los distintos grupos a los que ofrezco apoyo técnico en sus proyectos grupales de fin de curso. Solicitar las credenciales por mail o whatsapp a Lautaro Rocha.
