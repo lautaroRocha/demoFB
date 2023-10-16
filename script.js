@@ -18,6 +18,10 @@ const CART_COUNT = document.querySelector('#cart')
 const BOOKS = [];
 const CART = {selected: [], total: 0};
 const newBookData= document.querySelector('#new-book')
+const aside = document.querySelector('aside')
+const closeCartBtn = document.querySelector('#close-cart')
+const cartItems = document.querySelector('#cart-items')
+const cartTotalValue = document.querySelector('#cart-value')
 //get books
 db.collection("books")
     .get()
@@ -56,6 +60,13 @@ const addToCart = (obj) => {
     CART.selected.push(obj)
     updateCount()
     updateTotalPrice();
+    const itemName = document.createElement('span')
+    const itemPrice = document.createElement('span')
+    itemName.textContent = obj.name
+    itemPrice.textContent = obj.price
+    cartItems.appendChild(itemName)
+    cartItems.appendChild(itemPrice)
+    cartTotalValue.textContent = `VALOR TOTAL DE COMPRA: $${CART.total}`
 }
 
 const updateCount = () => {
@@ -99,3 +110,9 @@ let btn = document.querySelector('#post-btn')
 
 btn.onclick = (e) => uploadBook(e)
 
+CART_COUNT.onclick = () => {
+    aside.classList.toggle('closed')
+}
+closeCartBtn.onclick = () => {
+    aside.classList.toggle('closed')
+}

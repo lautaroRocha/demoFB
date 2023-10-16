@@ -36,7 +36,7 @@ aside{
 }
 
 aside.closed {
-    left: 100vw; 
+    display: none;
 }
 .cart-content{
     background-color: white;
@@ -46,4 +46,8 @@ aside.closed {
     flex-direction: column;
     height: 100%;
     margin-left: auto;
+}
+
+aside.closed.cart-content{
+    margin-left: 100vw;
 }
